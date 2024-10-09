@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Browser Check</title>
+</head>
+<body>
+    <script>
+        function detectBrowser() {
+            var isEdge = /Edg/.test(navigator.userAgent);
+            if (!isEdge) {
+                alert('Please install Microsoft Edge to access this app.');
+                window.location.href = 'https://www.microsoft.com/en-us/edge';
+            } else {
+                window.location.href = 'https://pattapuripriyanka05.github.io/browser-check/'; // Replace with your PowerApps app link
+            }
+        }
+        detectBrowser();
+    </script>
+</body>
+</html>
